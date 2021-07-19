@@ -1,0 +1,13 @@
+#define sensor A1
+
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(sensor, INPUT);
+}
+
+void loop()
+{
+  int val = analogRead(sensor);
+  Serial.println(val);
+}

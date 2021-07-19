@@ -1,0 +1,12 @@
+#define dcmotor 3
+
+void setup()
+{
+  pinMode(dcmotor, OUTPUT);
+}
+
+void loop()
+{
+  analogWrite(dcmotor,255);
+  delay(1000);
+}

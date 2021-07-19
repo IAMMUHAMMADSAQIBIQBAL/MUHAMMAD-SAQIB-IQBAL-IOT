@@ -1,0 +1,15 @@
+#define potentiometer A1
+#define led 3
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(potentiometer, INPUT);
+  pinMode(led, OUTPUT);
+}
+
+void loop()
+{
+  int potentiometer = analogRead(potentiometer);
+  Serial.println(potentiometer);
+  analogWrite(led,potentiometer);
+}
